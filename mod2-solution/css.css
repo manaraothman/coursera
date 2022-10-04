@@ -1,0 +1,80 @@
+*{
+	box-sizing: border-box;
+	
+}
+body{
+	position: relative;
+	font-family: helvetica;
+}
+.row{
+	width: 100%;
+	padding: 1px;
+	margin: 1px;
+}
+h1{
+	text-align: center;
+
+	}
+.row{
+	width: 100%;
+
+}
+section{
+	position: relative;
+	top: 50px;
+	margin: 3px;
+
+	}
+	
+ h2{ width: 90%;
+   
+	position: relative;
+	border: 1px solid black;
+
+	margin-bottom: 0px;
+	text-align: right;
+	margin-right: auto;
+	margin-left: auto;
+    background-color:green;
+} 
+p{ width: 90%;
+	    height: 100px;
+	position: relative;	
+	margin-top: 0px;
+	margin-right: auto;
+  margin-left: auto;
+}
+    .col-1>p{
+    	background-color: yellowgreen;   	
+    }
+	.col-2>p{
+		background-color: navajowhite;
+}
+	.col-3>p{
+		background-color: sandybrown;
+	}
+@media (min-width: 992px) {
+	.col-1,.col-2,.col-3
+	{
+		float: left;
+		 border: 1px solid blue;
+		width: 32.9%;
+		
+	}	
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-1,.col-2,.col-3
+	{
+		float: left;
+		 border: 1px solid green;}
+		 .col-1,.col-2{
+		 	padding: 1px;
+		width: 49%;}
+		.col-3{width: 100%;}
+}
+@media (max-width: 767px) {
+	.col-1,.col-2,.col-3
+	{float: left;
+		 border: 1px solid red;
+		width: 100%;}
+}
